@@ -1,0 +1,31 @@
+<h1>Home page</h1>
+<h2> {{className}}</h2>
+<h3 [class]="textColor">Number of students: {{numberOfStudents}}</h3>
+<h4 *ngIf="numberOfStudents==0" class="text-warning">No student in this class</h4>
+<button type="button" (click)="addStudent()" class="btn btn-outline-danger mx-2">Add Student</button>
+<button type="button" (click)="removeStudent()" class="btn btn-outline-danger">Remove Student</button>
+
+<h2>Các danh mục mặt hàng</h2>
+<li *ngFor="let c of categories" >{{c}}</li>
+<div class="row">
+  <div class="col-3">
+    <div class="card">
+      <div class="card-body">
+        <h2>{{product.name}}</h2>
+        <p class="text-danger">{{product.price}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3" *ngFor="let c of products">
+    <div class="card">
+      <img src="assets/media/2.jpg">
+      <div class="card-body" >
+        <h2><a routerLink="/product/{{c.id }}">{{c.name}}</a></h2>
+          <p class="text-danger">{{c.price}}</p>
+        <button *ngIf="c.qty > 0" type="button" class="btn btn-outline-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>

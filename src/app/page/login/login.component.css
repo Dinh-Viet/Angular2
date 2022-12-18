@@ -1,0 +1,42 @@
+
+body{
+  height:150vh;
+
+  display: flex;
+  justify-content: center;
+  /*font-family: "Poppins";*/
+  color: white;
+
+}
+.mau{
+  background: darkviolet;
+}
+.cardd{
+  width:400px;
+  height: 600px;
+  background: #bed0e1;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.cardd1{
+  width:400px;
+  height: 150px;
+  background: darkviolet;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.mau{
+  font-size: 20px;
+  padding: 50px;
+}
+label{
+  float: left;
+}
+.singup{
+  background-color: darkviolet;
+}
